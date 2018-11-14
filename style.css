@@ -1,0 +1,68 @@
+* {
+  box-sizing: border-box;}
+
+  p {
+    font-size: 16px;
+  }
+  li {
+    text-align: left;
+    
+  }
+  
+body {
+  background: #ffaa80;
+  font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace; 
+  padding: 25px;
+  
+}
+
+/* Heading */
+.header {
+  text-align: center;
+  padding: 30px;
+  font-size: 40px;
+  background: lightgray;
+}
+
+/* Two unequal columns that float beside each other */
+
+/* Left column */
+.leftcol { 
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcol {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+/*images*/
+.img {
+  width: 100%;
+  padding: 15px;
+}
+
+/* blog posts */
+.post {
+  background-color: white;
+  padding: 15px;
+  margin-top: 25px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .leftcol, .rightcol  { 
+    width: 100%;
+    padding: 0;
+  }
+}
