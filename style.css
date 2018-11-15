@@ -19,9 +19,9 @@ body {
 /* Heading */
 .header {
   text-align: center;
-  padding: 30px;
   font-size: 40px;
   background: lightgray;
+  padding: 20px;
 }
 
 /* Two unequal columns that float beside each other */
@@ -40,9 +40,8 @@ body {
 }
 
 /*images*/
-.img {
-  width: 100%;
-  padding: 15px;
+img {
+  padding: 20px;
 }
 
 /* blog posts */
@@ -65,4 +64,10 @@ body {
     width: 100%;
     padding: 0;
   }
+  @media (max-width:767px){
+    img {
+      width: 50px; // new width 
+      height: 50px; // new height 
+    }
+   }
 }
