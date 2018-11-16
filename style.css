@@ -66,8 +66,8 @@ img {
   }
   @media (max-width:767px){
     img {
-      width: 50px; // new width 
-      height: 50px; // new height 
+      width: 100%; // new width 
+      height: 70%; // new height 
     }
    }
 }
